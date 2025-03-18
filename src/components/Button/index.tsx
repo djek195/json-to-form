@@ -26,13 +26,12 @@ const Button: FC<ButtonProps> = ({
   theme = PRIMARY,
   className,
 }) => {
-  const { button, primary, tab, cancel } = styles;
   const buttonClassName = cx(
-    button,
+    styles.button,
     {
-      [primary]: theme === PRIMARY,
-      [tab]: theme === TAB,
-      [cancel]: theme === CANCEL,
+      [styles.primary]: theme === PRIMARY,
+      [styles.tab]: theme === TAB,
+      [styles.cancel]: theme === CANCEL,
     },
     className,
   );
