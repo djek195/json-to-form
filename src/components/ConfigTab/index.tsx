@@ -7,6 +7,12 @@ import { debounce } from 'lodash';
 
 import styles from './ConfigTab.module.scss';
 
+const editorOptions = {
+  minimap: { enabled: false },
+  automaticLayout: true,
+  scrollBeyondLastLine: false,
+};
+
 interface ConfigTabProps {
   config: FormConfig;
   setConfig: (config: FormConfig) => void;
@@ -18,12 +24,6 @@ const ConfigTab: FC<ConfigTabProps> = ({ config, setConfig, setActive }) => {
     () => JSON.stringify(config, null, 2),
     [config],
   );
-
-  const editorOptions = {
-    minimap: { enabled: false },
-    automaticLayout: true,
-    scrollBeyondLastLine: false,
-  };
 
   const parseConfig = (value: string | undefined): FormConfig => {
     try {
