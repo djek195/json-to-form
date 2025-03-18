@@ -44,9 +44,10 @@ const ConfigTab: FC<ConfigTabProps> = ({ config, setConfig, setActive }) => {
   };
 
   const handleApply = () => {
-    if (Object.keys(config).length > 0) {
-      setActive();
+    if (Object.keys(config).length <= 0) {
+      return alert('Invalid JSON');
     }
+    setActive();
   };
 
   return (
