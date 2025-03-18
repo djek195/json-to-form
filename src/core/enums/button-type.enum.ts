@@ -1,4 +1,4 @@
-export enum ButtonTypes {
+export enum ButtonType {
   BUTTON = 'button',
   SUBMIT = 'submit',
 }

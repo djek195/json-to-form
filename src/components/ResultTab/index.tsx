@@ -3,8 +3,8 @@ import { useForm } from 'react-hook-form';
 
 import Button from 'components/Button';
 import FormControl from 'components/FormControl';
-import { ButtonTypes } from 'core/enums/button-types.enum.ts';
-import { ButtonVariants } from 'core/enums/button-variants.enum.ts';
+import { ButtonType } from 'core/enums/button-type.enum.ts';
+import { ButtonVariant } from 'core/enums/button-variant.enum.ts';
 import { FormConfig } from 'core/types/formConfig.type.ts';
 
 import styles from './ResultTab.module.scss';
@@ -15,8 +15,8 @@ interface ResultTabProps {
 }
 
 const ResultTab: FC<ResultTabProps> = ({ config, setActive }) => {
-  const { CANCEL } = ButtonVariants;
-  const { BUTTON } = ButtonTypes;
+  const { CANCEL } = ButtonVariant;
+  const { BUTTON } = ButtonType;
   const { control, handleSubmit } = useForm();
 
   const onSubmit = (data: Record<string, unknown>) => {

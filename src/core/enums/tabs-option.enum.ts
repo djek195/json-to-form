@@ -1,4 +1,4 @@
-export enum TabsOptions {
+export enum TabsOption {
   RESULT = 'Result',
   CONFIG = 'Config',
 }

@@ -1,22 +1,22 @@
 import { FC } from 'react';
 
 import cx from 'classnames';
-import { ButtonTypes } from 'core/enums/button-types.enum.ts';
-import { ButtonVariants } from 'core/enums/button-variants.enum.ts';
+import { ButtonType } from 'core/enums/button-type.enum.ts';
+import { ButtonVariant } from 'core/enums/button-variant.enum.ts';
 
 import styles from './Button.module.scss';
 
 interface ButtonProps {
   onClick: () => void;
-  type?: ButtonTypes;
+  type?: ButtonType;
   disabled?: boolean;
   text: string;
-  theme?: ButtonVariants;
+  theme?: ButtonVariant;
   className?: string;
 }
 
-const { PRIMARY, TAB, CANCEL } = ButtonVariants;
-const { BUTTON } = ButtonTypes;
+const { PRIMARY, TAB, CANCEL } = ButtonVariant;
+const { BUTTON } = ButtonType;
 
 const Button: FC<ButtonProps> = ({
   onClick,

@@ -3,18 +3,18 @@ import { useState } from 'react';
 import Button from 'components/Button';
 import ConfigTab from 'components/ConfigTab';
 import ResultTab from 'components/ResultTab';
-import { ButtonTypes } from 'core/enums/button-types.enum.ts';
-import { ButtonVariants } from 'core/enums/button-variants.enum';
-import { TabsOptions } from 'core/enums/tabs-options.enum.ts';
+import { ButtonType } from 'core/enums/button-type.enum.ts';
+import { ButtonVariant } from 'core/enums/button-variant.enum';
+import { TabsOption } from 'core/enums/tabs-option.enum.ts';
 import { FormConfig } from 'core/types/formConfig.type.ts';
 
 import styles from './Tabs.module.scss';
 
 const Tabs = () => {
-  const { TAB } = ButtonVariants;
-  const { BUTTON } = ButtonTypes;
-  const { CONFIG, RESULT } = TabsOptions;
-  const [activeTab, setActiveTab] = useState<TabsOptions>(CONFIG);
+  const { TAB } = ButtonVariant;
+  const { BUTTON } = ButtonType;
+  const { CONFIG, RESULT } = TabsOption;
+  const [activeTab, setActiveTab] = useState<TabsOption>(CONFIG);
   const [config, setConfig] = useState<FormConfig>({
     title: 'Generated Form',
     items: [],

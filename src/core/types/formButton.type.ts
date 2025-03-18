@@ -1,7 +1,7 @@
-import { ButtonTypes } from 'core/enums/button-types.enum.ts';
+import { ButtonType } from 'core/enums/button-type.enum.ts';
 
 export interface FormButton {
   label: string;
-  type: ButtonTypes;
+  type: ButtonType;
   action?: string;
 }
