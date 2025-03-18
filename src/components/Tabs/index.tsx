@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Button from 'components/Button';
 import ConfigTab from 'components/ConfigTab';
 import ResultTab from 'components/ResultTab';
+import { DefaultFormTitle } from 'core/constants/text-consts.ts';
 import { ButtonType } from 'core/enums/button-type.enum.ts';
 import { ButtonVariant } from 'core/enums/button-variant.enum';
 import { TabsOption } from 'core/enums/tabs-option.enum.ts';
@@ -16,7 +17,7 @@ const Tabs = () => {
   const { CONFIG, RESULT } = TabsOption;
   const [activeTab, setActiveTab] = useState<TabsOption>(CONFIG);
   const [config, setConfig] = useState<FormConfig>({
-    title: 'Generated Form',
+    title: DefaultFormTitle,
     items: [],
     buttons: [{ label: 'Back', type: BUTTON }],
   });
