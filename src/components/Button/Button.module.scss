@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  padding: 10px;
+}
+
+.tab {
+    background-color: $color__text-input;
+}
+
+.primary {
+  background-color: $color-primary;
+  color: $color__text-input;
+}
+
+.cancel {
+  background-color: $color__error;
+}

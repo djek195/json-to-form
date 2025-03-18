@@ -1,0 +1,38 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textInput,
+.numberInput,
+.textAreaInput,
+.dateInput {
+  padding: 10px;
+  border: 1px solid $color__border;
+  border-radius: 5px;
+  color: $color__text-input;
+  background-color: $color__input;
+}
+
+.numberInput {
+  max-width: 100px;
+}
+
+.textAreaInput {
+  resize: vertical;
+}
+
+.checkboxInput {
+  width: fit-content;
+}
+
+.dateInput {
+  width: fit-content;
+}
