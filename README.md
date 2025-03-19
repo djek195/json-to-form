@@ -135,13 +135,13 @@ To add a button, include an object in the `buttons` array with a `label` and an 
     }
   ],
   "buttons": [
-    { 
-       "label": "Register", 
-       "action": "submit"
+    {
+      "label": "Back",
+      "type": "button"
     },
-    { 
-       "label": "Clear",
-       "action": "reset"
+    {
+      "label": "Submit",
+      "type": "submit"
     }
   ]
 }
