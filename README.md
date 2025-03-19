@@ -89,11 +89,11 @@ To add a form field, include an object in the `items` array with a `label` and a
 }
 ```
 
-To add a button, include an object in the `buttons` array with a `label` and an `action` (e.g., "submit" or "button"). For example:
+To add a button, include an object in the `buttons` array with a `label` and an `type` (e.g., "submit" or "button"). For example:
 ```json
 { 
    "label": "Reset",
-   "action": "button"
+   "type": "button"
 }
 ```
 
