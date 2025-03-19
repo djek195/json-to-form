@@ -58,7 +58,7 @@ Upon loading the first tab, a JSON input field is displayed where you can paste 
   "buttons": [
     { 
        "label": "Submit", 
-       "action": "submit"
+       "type": "submit"
     }
   ]
 }
